@@ -22,9 +22,9 @@ function App() {
   return (
     <div className="App">
       <div>
-      {/* <label>
+      <label>
         Number 1:
-        <input type="range" min="0" max="100" value={number1} onChange={handleNumber1Change} />
+        <input type="range" min="0" max="400" value={number1} onChange={handleNumber1Change} />
         <span>{number1}</span>
       </label>
       <br />
@@ -32,7 +32,7 @@ function App() {
         Number 2:
         <input type="range" min="0" max="400" value={number2} onChange={handleNumber2Change} />
         <span>{number2}</span>
-      </label> */}
+      </label>
 
       <h1>         Rain              </h1>
 

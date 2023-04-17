@@ -50,7 +50,7 @@ const Rain = (props) => {
       class Drop {
         constructor() {
           this.x = p5.random(canvasWidth);
-          this.y = p5.random(-500, -50);
+          this.y = p5.random(-canvasHeight, -50);
           this.z = p5.random(0, 20);
           this.len = p5.map(this.z, 0, 20, 10, 20);
           this.yspeed = p5.map(this.z, 0, 20, 1, 20);
@@ -90,9 +90,15 @@ const Rain = (props) => {
       sketchRef.current.remove();
       sketchRef.current = null;
     };
-  }, []);
+  }, [canvasHeight, canvasWidth]);
 
-  return <div ref={sketchRef} />;
+  return 
+  <div>
+    <h1>Raining</h1>
+     <div ref={sketchRef} />
+
+  </div>
+ ;
 };
 
 export default Rain;
